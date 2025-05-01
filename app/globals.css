@@ -19,3 +19,47 @@
     --foreground: #ededed;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .neu-light {
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+  }
+
+  .neu-dark {
+    background: #1a1a1a;
+    box-shadow: 20px 20px 60px #0d0d0d,
+                -20px -20px 60px #272727;
+  }
+
+  .neu-inset-light {
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+  }
+
+  .neu-inset-dark {
+    background: #1a1a1a;
+    box-shadow: inset 5px 5px 10px #0d0d0d,
+                inset -5px -5px 10px #272727;
+  }
+}
+
+#container {
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+}
+
+.rr--box {
+  transition: transform 0.2s ease-in-out;
+}
+
+.rr--box:hover {
+  transform: scale(1.2);
+}
