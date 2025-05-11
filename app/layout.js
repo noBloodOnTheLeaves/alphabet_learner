@@ -1,3 +1,4 @@
+import FeedbackButton from "@/app/components/ui/buttons/FeedbackButton";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
            disableTransitionOnChange
         >
           <ThemeToggle />
+          <FeedbackButton />
           {children}
         </ThemeProvider>
       </body>
